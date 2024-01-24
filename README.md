@@ -20,7 +20,9 @@ During this phase, we are testing the game logic and user interaction in a conso
 The ultimate goal is to transform this console-based game into a web application. This will involve implementing a user interface, adding multiplayer functionality, and possibly introducing additional features like player accounts and leaderboards.
 
 ## How to Run
-To run the game, simply run the included BlackjackSim.exe.
+Java required.
+To run the game, run the command line from the file directory, or via your IDE of choice. Enter ``jar cvfm BlackjackSim.jar manifest.txt BlackjackSim.class Hand.class Shoe.class`` to create the .jar if it does not already exist.
+Then enter ``java -jar BlackjackSim.jar`` to run the program via the command line.
 
 ## Feedback
 As this is a testing phase, any feedback or suggestions for improvement are greatly welcome. Please feel free to open an issue or submit a pull request.
