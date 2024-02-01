@@ -82,11 +82,24 @@ public class Hand {
 
         handValue = value;
     }
-    
+
+    public void printHand(String playerOrDealer) {
+        System.out.println(playerOrDealer + " hand: " + String.join(", ", cards) + "\nWith a value of: " + handValue);
+    }
+
+    //resets the hand
+    public void resetHand() {
+        cards.clear();
+        handValue = 0;
+        numAcesChanged = 0;
+    }
+
+    //checks if the hand is a blackjack
     public Boolean isBlackjack() {
         return handValue == 21 && cards.size() == 2;
     }
 
+    //checks if the hand is a bust
     public Boolean isBust() {
         return handValue > 21;
     }
