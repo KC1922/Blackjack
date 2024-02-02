@@ -88,7 +88,7 @@ public class Hand {
     }
 
     //resets the hand
-    public void resetHand() {
+    public void clearHand() {
         cards.clear();
         handValue = 0;
         numAcesChanged = 0;
